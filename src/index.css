@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  20% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+  40% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.emoji-container {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.emoji {
+  width: 100%;
+  height: 100%;
+  animation: fadeInOut 1s ease-in-out;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background-color: rgb(192, 188, 188);
+  width: 47rem; /* Adjust as needed */
+  top: 79%;
+  right: 22%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.glow {
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  /* Adjust shadow color and size as needed */
+}
+
+.ring {
+  border-width: 2px;
+  border-style:solid;
+  border-color:  rgb(145, 143, 143);
+}
+
+.rounded-custom {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+
+.quadrant {
+  width: 120px;
+  height: 120px;
+  margin: 50px auto;
+  background-color:white;
+  border-radius: 0 100% 0 0;
+  
+   border-width: 4px;
+  border-style: solid; /* Added to make the border visible */
+  border-color:  rgb(192, 188, 188);
+}
+
+/* Adjust the line position */
+.linee {
+  left: 12rem; /* Adjust this value to properly position the line */
+}
